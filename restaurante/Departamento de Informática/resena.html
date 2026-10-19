@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paula María Bonilla Muñoz">
+    <meta name="description" content="Formulario para valorar un plato del restaurante Donna">
+    <meta name="keywords" content="Donna, restaurante, reseña, platos">
+    <title>Reseña de un plato - Restaurante Donna</title>
+</head>
+<body>
+<header><h1>Escribe una reseña de un plato</h1></header>
+<nav>
+    <a href="../Restaurante Donna.html">Volver al restaurante</a> |
+    <a href="../../index.html">Menú principal</a>
+</nav>
+<main>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Tu opinión</legend>
+            <label for="plato">Elige el plato:</label>
+            <select id="plato" name="plato" required>
+                <option value="">Selecciona un plato</option>
+                <option value="risoto">Risoto alla milanese</option>
+                <option value="polenta">Polenta</option>
+                <option value="tagliatelle">Tagliatelle al ragù</option>
+            </select>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="resena">Reseña del plato:</label>
+            <textarea id="resena" name="resena" rows="6" cols="40" required></textarea>
+        </fieldset>
+        <button type="submit">Enviar reseña</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</main>
+<footer><p>Restaurante Donna</p></footer>
+</body>
+</html>
