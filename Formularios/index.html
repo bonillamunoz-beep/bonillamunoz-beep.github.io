@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paula María Bonilla Muñoz">
+    <meta name="description" content="Formularios de inscripción y solicitud de ingreso al club de informática">
+    <meta name="keywords" content="formularios, inscripción, informática">
+    <title>Formularios</title>
+</head>
+<body>
+<header>
+    <h1>Formularios</h1>
+    <p>Actividad 5 - Desarrollo web</p>
+</header>
+<nav>
+    <a href="../index.html">Menú principal</a>
+</nav>
+<main>
+    <section>
+        <h2>Hoja de inscripción en ciclos formativos de grado superior</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <label for="apellidos">Apellidos:</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni">
+                <label for="localidad">Localidad de nacimiento:</label>
+                <input type="text" id="localidad" name="localidad">
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia">
+                    <option value="cordoba">Córdoba</option>
+                    <option value="huelva">Huelva</option>
+                    <option value="sevilla">Sevilla</option>
+                    <option value="malaga">Málaga</option>
+                    <option value="jaen">Jaén</option>
+                    <option value="granada">Granada</option>
+                    <option value="cadiz">Cádiz</option>
+                    <option value="almeria">Almería</option>
+                </select>
+                <label for="fecha">Fecha de nacimiento:</label>
+                <input type="date" id="fecha" name="fecha">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+                <label for="codigo">Código postal:</label>
+                <input type="text" id="codigo" name="codigo" inputmode="numeric">
+            </fieldset>
+            <fieldset>
+                <legend>Forma de acceso</legend>
+                <label><input type="radio" name="acceso" value="directo" required> Directo</label>
+                <p><label><input type="radio" name="modalidad" value="bachillerato"> Bachillerato LOGSE</label></p>
+                <p><label><input type="radio" name="modalidad" value="experimental"> Experimental</label></p>
+                <p><label><input type="radio" name="modalidad" value="cou"> COU / opción</label></p>
+                <p><label><input type="radio" name="modalidad" value="fp2"> FP2</label></p>
+                <label for="otros">Otros (especifique):</label>
+                <input type="text" id="otros" name="otros">
+                <p><label><input type="radio" name="acceso" value="prueba"> Prueba libre</label></p>
+            </fieldset>
+            <fieldset>
+                <legend>Documentos adjuntados</legend>
+                <label><input type="checkbox" name="documentos" value="dni"> Fotocopia del DNI</label>
+                <label><input type="checkbox" name="documentos" value="certificado"> Certificado académico</label>
+                <label for="documentosOtros">Otros documentos:</label>
+                <input type="text" id="documentosOtros" name="documentosOtros">
+            </fieldset>
+            <button type="submit">Enviar solicitud</button>
+            <button type="reset">Limpiar datos</button>
+        </form>
+    </section>
+    <section>
+        <h2>Solicitud para el club Amigos de la informática</h2>
+        <form action="#" method="get">
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="clubNombre">Nombre:</label>
+                <input type="text" id="clubNombre" name="nombre" required>
+                <label for="domicilio">Domicilio:</label>
+                <input type="text" id="domicilio" name="domicilio" placeholder="Calle, número y localidad">
+                <label for="pais">País de origen:</label>
+                <select id="pais" name="pais">
+                    <option>España</option><option>Portugal</option><option>Francia</option><option>Italia</option><option>Otro</option>
+                </select>
+                <label for="clubFecha">Fecha de nacimiento:</label>
+                <input type="date" id="clubFecha" name="fecha">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                <p>Estado civil:</p>
+                <label><input type="radio" name="estadoCivil" value="soltero"> Soltero/a</label>
+                <label><input type="radio" name="estadoCivil" value="casado"> Casado/a</label>
+                <label><input type="radio" name="estadoCivil" value="separado"> Separado/a</label>
+                <label><input type="radio" name="estadoCivil" value="viudo"> Viudo/a</label>
+                <p>Sexo:</p>
+                <label><input type="radio" name="sexo" value="hombre"> Hombre</label>
+                <label><input type="radio" name="sexo" value="mujer"> Mujer</label>
+            </fieldset>
+            <fieldset>
+                <legend>Otra información de interés</legend>
+                <label for="dispositivos">Componentes electrónicos que utilizas habitualmente:</label>
+                <select id="dispositivos" name="dispositivos" multiple size="4">
+                    <option>Móvil</option><option>Tablet</option><option>Ordenador</option><option>Ebook</option>
+                </select>
+                <p>Actividades favoritas:</p>
+                <label><input type="checkbox" name="actividades" value="deporte"> Hacer deporte</label>
+                <label><input type="checkbox" name="actividades" value="amigos"> Salir con mis amigos</label>
+                <label><input type="checkbox" name="actividades" value="series"> Ver series y películas</label>
+                <label><input type="checkbox" name="actividades" value="senderismo"> Realizar rutas de senderismo</label>
+                <label><input type="checkbox" name="actividades" value="cine"> Ir al cine</label>
+                <label><input type="checkbox" name="actividades" value="musica"> Escuchar música</label>
+                <label for="motivo">Explique por qué desea ingresar en el club:</label>
+                <textarea id="motivo" name="motivo" rows="4" cols="40"></textarea>
+                <label for="pelicula">Película favorita:</label>
+                <input type="text" id="pelicula" name="pelicula">
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Departamento de Informática</p>
+</footer>
+</body>
+</html>
