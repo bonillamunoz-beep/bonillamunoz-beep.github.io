@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Paula María Bonilla Muñoz">
+    <meta name="description" content="Formulario para reservar mesa en el restaurante Donna">
+    <meta name="keywords" content="Donna, restaurante, reserva, mesa">
+    <title>Reserva - Restaurante Donna</title>
+</head>
+<body>
+<header>
+    <h1>Reserva una mesa en Donna</h1>
+</header>
+<nav>
+    <a href="../Restaurante Donna.html">Volver al restaurante</a> |
+    <a href="../../index.html">Menú principal</a>
+</nav>
+<main>
+    <form action="#" method="get">
+        <fieldset>
+            <legend>Datos de la reserva</legend>
+            <label for="nombre">Nombre y apellidos:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required>
+            <label for="personas">Número de personas:</label>
+            <input type="number" id="personas" name="personas" min="1" max="20" required>
+            <label for="comentarios">Comentarios o peticiones:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" cols="35"></textarea>
+        </fieldset>
+        <button type="submit">Enviar reserva</button>
+        <button type="reset">Limpiar</button>
+    </form>
+</main>
+<footer><p>Restaurante Donna</p></footer>
+</body>
+</html>
