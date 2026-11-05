@@ -55,6 +55,19 @@ body {
     background: #d5a9e5;
 }
 
+/* ENLACE A LA PÁGINA PRINCIPAL */
+.cabecera nav .enlace-principal {
+    color: #57206d;
+    background: #ead4f2;
+    border: 1px solid #c997dc;
+    font-weight: bold;
+}
+
+.cabecera nav .enlace-principal:hover {
+    color: white;
+    background: #8c4aa5;
+}
+
 .cabecera nav .boton-reserva {
     color: white;
     background: #57206d;
