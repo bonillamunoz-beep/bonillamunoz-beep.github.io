@@ -74,7 +74,10 @@ body {
     min-height: 510px;
     padding: 65px 7%;
     color: white;
-    background: linear-gradient(115deg, #24102d, #4c205e 55%, #75418a);
+    background-image: linear-gradient(90deg, rgba(35, 12, 48, 0.96), rgba(73, 29, 91, 0.82), rgba(73, 29, 91, 0.60)), url("Imagenes/Donna.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .texto-portada {
@@ -156,7 +159,10 @@ body {
 .platos {
     padding: 65px 6%;
     text-align: center;
-    background: linear-gradient(180deg, #f8effb, #ecd7f5);
+    background-image: linear-gradient(rgba(248, 239, 251, 0.91), rgba(236, 215, 245, 0.94)), url("Imagenes/Risotto%20alla%20Milanese%20-%20The%20Defined%20Dish.jfif");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .centrado {
