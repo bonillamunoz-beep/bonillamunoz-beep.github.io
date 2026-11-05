@@ -74,9 +74,9 @@ body {
     min-height: 510px;
     padding: 65px 7%;
     color: white;
-    background-image: linear-gradient(90deg, rgba(35, 12, 48, 0.96), rgba(73, 29, 91, 0.82), rgba(73, 29, 91, 0.60)), url("Imagenes/Donna.png");
-    background-size: auto, 58% auto;
-    background-position: center, right center;
+    background-image: linear-gradient(90deg, rgba(35, 12, 48, 0.91), rgba(73, 29, 91, 0.70), rgba(73, 29, 91, 0.42)), url("Imagenes/fondo1.jfif");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 }
 
@@ -114,8 +114,7 @@ body {
 }
 
 .imagen-portada {
-    flex: 1;
-    max-width: 520px;
+    display: none;
 }
 
 .imagen-portada img {
@@ -159,12 +158,11 @@ body {
 .platos {
     padding: 65px 6%;
     text-align: center;
-    background-image: linear-gradient(rgba(248, 239, 251, 0.91), rgba(236, 215, 245, 0.94)), url("Imagenes/Risotto%20alla%20Milanese%20-%20The%20Defined%20Dish.jfif");
+    background-image: linear-gradient(rgba(248, 239, 251, 0.88), rgba(236, 215, 245, 0.91)), url("Imagenes/fondo2.jfif");
     background-size: cover;
     background-position: center;
-    background-attachment: scroll;
-    background-size: auto, 320px auto;
     background-repeat: no-repeat;
+    background-attachment: scroll;
 
 }
 
