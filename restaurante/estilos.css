@@ -408,11 +408,16 @@ footer p {
 .ingredientes-receta li { padding: 5px 0; color: #553663; }
 .ingredientes-receta li::marker { color: #a45bc0; }
 
-.foto-receta { padding: 12px; }
+.foto-receta {
+    width: 100%;
+    max-width: 350px;
+    justify-self: center;
+    padding: 10px;
+}
 .foto-receta img {
     display: block;
     width: 100%;
-    max-height: 560px;
+    max-height: 250px;
     object-fit: contain;
     border-radius: 12px;
 }
@@ -422,5 +427,6 @@ footer p {
     .receta-cabecera { padding: 30px 20px; }
     .receta-cabecera h1 { font-size: 32px; }
     .receta-contenido { grid-template-columns: 1fr; }
-    .foto-receta img { max-height: 280px; }
+    .foto-receta { max-width: 320px; }
+    .foto-receta img { max-height: 220px; }
 }
