@@ -2,39 +2,86 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilos.css">
     <meta name="author" content="Paula María Bonilla Muñoz">
     <meta name="description" content="Página principal del restaurante italiano Donna">
     <meta name="keywords" content="Donna, restaurante, comida italiana, menú, reserva, contacto">
-    <title>Donna</title>
+    <title>Restaurante Donna</title>
 </head>
 <body>
-<header>
-    <h1>Restaurante comida Italiana Donna</h1>
+<header class="cabecera">
+    <a class="logo" href="Restaurante Donna.html">Donna</a>
+    <nav>
+        <a href="Restaurante Donna.html">Inicio</a>
+        <a href="#platos">Menú</a>
+        <a href="#nosotros">Sobre nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a class="boton-reserva" href="Departamento%20de%20Inform%C3%A1tica/reserva.html">Reserva mesa</a>
+    </nav>
 </header>
-<nav>
-        <a href="../index.html">Volver</a>
-        <a href="Menu/Risoto/Risoto.html">Risoto alla milanese</a>
-        <a href="Menu/Polenta/Polenta.html">Polenta</a>
-        <a href="Menu/Tagliatelle Al Ragù/TagliatelleAlRag.html">Tagliatelle al ragù</a>
-</nav>
+
 <main>
-    <section>
-        <h2>¡Bienvenidos a Donna!</h2>
-        <p>Aquí podrás comer comida 100% italiana. Todas las recetas son de la abuela del dueño. Don Robertto quería hacer realidad que la comida de su abuela pudieran comerla extranjeros.</p>
-        <img src="Imagenes/Donna.png" alt="Donna" width="400">
+    <section class="portada" id="nosotros">
+        <div class="texto-portada">
+            <p class="subtitulo">AUTÉNTICA COCINA ITALIANA</p>
+            <h1>Bienvenidos a <span>Restaurante Donna</span></h1>
+            <p class="descripcion">Disfruta de la auténtica cocina italiana en un ambiente único.</p>
+            <p>Aquí podrás comer comida 100% italiana. Todas las recetas son de la abuela del dueño. Don Robertto quería hacer realidad que la comida de su abuela pudieran comerla extranjeros.</p>
+            <a class="boton-principal" href="#platos">Ver menú</a>
+            <a class="boton-secundario" href="Departamento%20de%20Inform%C3%A1tica/reserva.html">Reserva mesa</a>
+        </div>
+        <div class="imagen-portada">
+            <img src="Imagenes/Donna.png" alt="Restaurante Donna">
+        </div>
     </section>
-    <section>
-        <h2>Formularios del restaurante</h2>
-        <ul>
-            <li><a href="Departamento%20de%20Inform%C3%A1tica/reserva.html">Enviar una reserva</a></li>
-            <li><a href="Departamento%20de%20Inform%C3%A1tica/contacto.html">Contactar con el restaurante</a></li>
-            <li><a href="Departamento%20de%20Inform%C3%A1tica/resena.html">Escribir una reseña de un plato</a></li>
-        </ul>
+
+    <section class="platos" id="platos">
+        <p class="subtitulo centrado">HECHO CON CARIÑO</p>
+        <h2>Nuestros platos</h2>
+        <p class="introduccion">Descubre algunas de nuestras especialidades italianas.</p>
+        <div class="tarjetas-platos">
+            <article class="tarjeta">
+                <img src="Imagenes/Risotto%20alla%20Milanese%20-%20The%20Defined%20Dish.jfif" alt="Risotto alla milanese">
+                <div class="contenido-tarjeta">
+                    <h3>Risotto alla milanese</h3>
+                    <p>Una receta italiana tradicional, cremosa y llena de sabor.</p>
+                    <a href="Menu/Risoto/Risoto.html">Ver plato</a>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <img src="Imagenes/polenta.jpg" alt="Polenta italiana">
+                <div class="contenido-tarjeta">
+                    <h3>Polenta</h3>
+                    <p>Un clásico de la cocina italiana preparado con todo el cariño.</p>
+                    <a href="Menu/Polenta/Polenta.html">Ver plato</a>
+                </div>
+            </article>
+            <article class="tarjeta">
+                <img src="Imagenes/tagliatelle.jpg" alt="Tagliatelle al ragù">
+                <div class="contenido-tarjeta">
+                    <h3>Tagliatelle al ragù</h3>
+                    <p>Pasta italiana acompañada de una deliciosa salsa tradicional.</p>
+                    <a href="Menu/Tagliatelle%20Al%20Rag%C3%B9/TagliatelleAlRag.html">Ver plato</a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="formularios" id="contacto">
+        <p class="subtitulo centrado">ESTAMOS PARA ATENDERTE</p>
+        <h2>¿Hablamos?</h2>
+        <p>Reserva tu mesa, ponte en contacto con nosotros o cuéntanos qué te ha parecido tu plato.</p>
+        <div class="enlaces-formularios">
+            <a href="Departamento%20de%20Inform%C3%A1tica/reserva.html">Hacer una reserva</a>
+            <a href="Departamento%20de%20Inform%C3%A1tica/contacto.html">Contactar</a>
+            <a href="Departamento%20de%20Inform%C3%A1tica/resena.html">Escribir una reseña</a>
+        </div>
     </section>
 </main>
+
 <footer>
-    <p>©2026 Donna</p>
+    <p>© 2026 Restaurante Donna · Auténtica cocina italiana</p>
 </footer>
 </body>
 </html>
