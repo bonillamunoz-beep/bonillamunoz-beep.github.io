@@ -422,5 +422,5 @@ footer p {
     .receta-cabecera { padding: 30px 20px; }
     .receta-cabecera h1 { font-size: 32px; }
     .receta-contenido { grid-template-columns: 1fr; }
-    .foto-receta img { max-height: 430px; }
+    .foto-receta img { max-height: 280px; }
 }
