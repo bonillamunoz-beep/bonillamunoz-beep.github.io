@@ -1,0 +1,54 @@
+/* Colores suaves para cada asignatura del horario */
+body {
+    font-family: Arial, sans-serif;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #eeeeee;
+}
+
+.sistemas {
+    background-color: #dceeff;
+}
+
+.aplicaciones {
+    background-color: #fce1ed;
+}
+
+.servicios {
+    background-color: #dcf3e5;
+}
+
+.ingles {
+    background-color: #fff0cc;
+}
+
+.seguridad {
+    background-color: #e8e0ff;
+}
+
+.optativa {
+    background-color: #ffe3d6;
+}
+
+.proyecto {
+    background-color: #d9f1f2;
+}
+
+.itinerario {
+    background-color: #f3e4ff;
+}
+
+.recreo {
+    background-color: #eeeeee;
+    font-weight: bold;
+}
