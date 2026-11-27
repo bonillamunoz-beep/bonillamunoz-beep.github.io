@@ -2,38 +2,46 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paula María Bonilla Muñoz">
     <meta name="description" content="Formulario para valorar un plato del restaurante Donna">
     <meta name="keywords" content="Donna, restaurante, reseña, platos">
+    <link rel="stylesheet" href="../estilos.css">
     <title>Reseña de un plato - Restaurante Donna</title>
-
 </head>
-<body>
-<header><h1>Escribe una reseña de un plato</h1></header>
-<nav>
-    <a href="../Restaurante Donna.html">Volver al restaurante</a> |
-    <a href="../../index.html">Menú principal</a>
+<body class="pagina-formulario">
+<header class="cabecera-formulario">
+    <a class="logo" href="../Restaurante%20Donna.html">Donna</a>
+    <h1>Cuéntanos tu opinión</h1>
+    <p>Nos encanta saber qué te han parecido nuestros platos.</p>
+</header>
+<nav class="nav-formulario">
+    <a href="../Restaurante%20Donna.html">Volver al restaurante</a>
+    <a href="../../index.html">Página principal</a>
+    <a href="reserva.html">Reservar mesa</a>
 </nav>
-<main>
-    <form action="#" method="get">
+<main class="contenido-formulario">
+    <form class="formulario-donna" action="#" method="get">
         <fieldset>
             <legend>Tu opinión</legend>
             <label for="plato">Elige el plato:</label>
             <select id="plato" name="plato" required>
                 <option value="">Selecciona un plato</option>
-                <option value="risoto">Risoto alla milanese</option>
+                <option value="risoto">Risotto alla milanese</option>
                 <option value="polenta">Polenta</option>
                 <option value="tagliatelle">Tagliatelle al ragù</option>
             </select>
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
             <label for="resena">Reseña del plato:</label>
-            <textarea id="resena" name="resena" rows="6" cols="40" required></textarea>
+            <textarea id="resena" name="resena" rows="6" required></textarea>
         </fieldset>
-        <button type="submit">Enviar reseña</button>
-        <button type="reset">Limpiar</button>
+        <div class="acciones-formulario">
+            <button type="submit">Enviar reseña</button>
+            <button type="reset" class="boton-limpiar">Limpiar</button>
+        </div>
     </form>
 </main>
-<footer><p>Restaurante Donna</p></footer>
+<footer class="pie-formulario"><p>© 2026 Restaurante Donna · Auténtica cocina italiana</p></footer>
 </body>
 </html>
