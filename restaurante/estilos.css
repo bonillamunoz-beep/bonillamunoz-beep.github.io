@@ -443,3 +443,154 @@ footer p {
     .foto-receta { max-width: 320px; }
     .foto-receta img { max-height: 220px; }
 }
+
+
+/* PAGINAS DE RESENA Y RESERVA */
+.pagina-formulario {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(248, 239, 251, 0.92), rgba(236, 215, 245, 0.94)), url("Imagenes/fondo2.jfif");
+    background-size: cover;
+    background-position: center;
+}
+
+.cabecera-formulario {
+    padding: 28px 6%;
+    color: white;
+    text-align: center;
+    background: linear-gradient(120deg, #351044, #71358a, #a45bc0);
+    border-bottom: 5px solid #d5a9e5;
+}
+
+.cabecera-formulario .logo {
+    display: inline-block;
+    color: #e8c9f2;
+    font-size: 30px;
+}
+
+.cabecera-formulario h1 {
+    margin: 8px 0;
+    color: white;
+    font-size: 38px;
+}
+
+.cabecera-formulario p { margin: 5px 0 0; color: #f4eafa; }
+
+.nav-formulario {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px;
+    background: #fdf8ff;
+    box-shadow: 0 4px 14px #57206d18;
+}
+
+.nav-formulario a {
+    padding: 9px 17px;
+    color: #57206d;
+    background: #ead4f2;
+    border: 1px solid #c997dc;
+    border-radius: 22px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-formulario a:hover { color: white; background: #71358a; }
+
+.contenido-formulario {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 35px 20px 55px;
+    flex: 1;
+}
+
+.formulario-donna {
+    padding: 28px;
+    background: #fffaff;
+    border: 2px solid #d5a9e5;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px #57206d24;
+}
+
+.formulario-donna fieldset {
+    padding: 22px;
+    border: 1px solid #c997dc;
+    border-radius: 14px;
+}
+
+.formulario-donna legend {
+    padding: 0 10px;
+    color: #57206d;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.formulario-donna label {
+    display: block;
+    margin: 15px 0 6px;
+    color: #4b205d;
+    font-weight: bold;
+}
+
+.formulario-donna input,
+.formulario-donna select,
+.formulario-donna textarea {
+    width: 100%;
+    padding: 11px 12px;
+    color: #3d174d;
+    background: #fdf8ff;
+    border: 1px solid #c9a3d8;
+    border-radius: 9px;
+    font: inherit;
+}
+
+.formulario-donna textarea { resize: vertical; }
+.formulario-donna input:focus,
+.formulario-donna select:focus,
+.formulario-donna textarea:focus {
+    outline: 2px solid #a45bc0;
+    border-color: #71358a;
+}
+
+.acciones-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.acciones-formulario button {
+    padding: 12px 22px;
+    color: white;
+    background: #71358a;
+    border: 2px solid #c997dc;
+    border-radius: 24px;
+    font: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.acciones-formulario button:hover { background: #a45bc0; }
+.acciones-formulario .boton-limpiar { color: #57206d; background: #ead4f2; }
+.acciones-formulario .boton-limpiar:hover { background: #d5a9e5; }
+
+.pie-formulario {
+    padding: 22px;
+    color: white;
+    text-align: center;
+    background: linear-gradient(100deg, #30103e, #612678);
+    border-top: 5px solid #c997dc;
+}
+
+.pie-formulario p { margin: 0; }
+
+@media (max-width: 500px) {
+    .cabecera-formulario h1 { font-size: 30px; }
+    .contenido-formulario { padding: 25px 14px 40px; }
+    .formulario-donna { padding: 16px; }
+    .formulario-donna fieldset { padding: 15px; }
+    .acciones-formulario button { flex: 1; }
+}
