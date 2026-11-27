@@ -2,22 +2,26 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Paula María Bonilla Muñoz">
     <meta name="description" content="Formulario para reservar mesa en el restaurante Donna">
     <meta name="keywords" content="Donna, restaurante, reserva, mesa">
+    <link rel="stylesheet" href="../estilos.css">
     <title>Reserva - Restaurante Donna</title>
-
 </head>
-<body>
-<header>
-    <h1>Reserva una mesa en Donna</h1>
+<body class="pagina-formulario">
+<header class="cabecera-formulario">
+    <a class="logo" href="../Restaurante%20Donna.html">Donna</a>
+    <h1>Reserva tu mesa</h1>
+    <p>Prepara tu visita y disfruta de la cocina italiana de Donna.</p>
 </header>
-<nav>
-    <a href="../Restaurante Donna.html">Volver al restaurante</a> |
-    <a href="../../index.html">Menú principal</a>
+<nav class="nav-formulario">
+    <a href="../Restaurante%20Donna.html">Volver al restaurante</a>
+    <a href="../../index.html">Página principal</a>
+    <a href="resena.html">Escribir una reseña</a>
 </nav>
-<main>
-    <form action="#" method="get">
+<main class="contenido-formulario">
+    <form class="formulario-donna" action="#" method="get">
         <fieldset>
             <legend>Datos de la reserva</legend>
             <label for="nombre">Nombre y apellidos:</label>
@@ -33,12 +37,14 @@
             <label for="personas">Número de personas:</label>
             <input type="number" id="personas" name="personas" min="1" max="20" required>
             <label for="comentarios">Comentarios o peticiones:</label>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="35"></textarea>
+            <textarea id="comentarios" name="comentarios" rows="4"></textarea>
         </fieldset>
-        <button type="submit">Enviar reserva</button>
-        <button type="reset">Limpiar</button>
+        <div class="acciones-formulario">
+            <button type="submit">Enviar reserva</button>
+            <button type="reset" class="boton-limpiar">Limpiar</button>
+        </div>
     </form>
 </main>
-<footer><p>Restaurante Donna</p></footer>
+<footer class="pie-formulario"><p>© 2026 Restaurante Donna · Auténtica cocina italiana</p></footer>
 </body>
 </html>
